@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="techibi.vibwifi.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#5B5959"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:id="@+id/linearLayout">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="135dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="35dp"
+
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Scanning Result"
+                            android:textSize="23dp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8"
+                            android:textColor="@color/green" />
+                        <Switch
+                            android:id="@+id/on_off_switch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textOff="OFF"
+                            android:checked="false"
+                            android:layout_weight="2"
+                            android:textOn="ON"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+
+
+                        <ListView
+                            android:id="@+id/list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@color/lightgrey"
+                            android:dividerHeight="2px"
+                            android:layout_centerHorizontal="true" >
+
+                        </ListView>
+
+                    </LinearLayout>
+
+                    <!--   <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Public Wifi"
+                               android:textSize="20dp"
+                               android:layout_margin="5dp"
+                               android:textColor="@color/red" />
+
+
+                       </LinearLayout>-->
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/switchnotice"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Please turn on above switch to check available wified!!"
+                    android:textSize="15dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+
+                    android:textColor="#bcbbbf" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

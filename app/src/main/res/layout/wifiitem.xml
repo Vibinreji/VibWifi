@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#4B4B4B"
+    android:orientation="vertical" >
+
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:padding="2dp"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/strength"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_full_wifi_white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="TextView" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="#fff"
+
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/capabilities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="#fff"
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/bssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="#fff"
+
+            android:text="TextView" />
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--       <TextView
+             android:id="@+id/ser_enq_id"
+             android:layout_width="4dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+                          android:textSize="2dp"
+             android:visibility="gone"
+             android:text="" />-->
+
+    </TableRow>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="@drawable/greyborder"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="5dp"
+            android:layout_weight="90"
+            android:textSize="16dp"
+            android:textColor="@color/lightgrey"
+            android:textStyle="bold"
+            android:text="Connect Wifi" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:layout_weight="10"
+            android:id="@+id/detail"
+            android:padding="2dp"
+            android:src="@drawable/arrow_right" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

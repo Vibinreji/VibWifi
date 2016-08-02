@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <item name="mediumgrey" type="color">#A9A9A9</item>
+    <item name="lightgrey" type="color">#D3D3D3</item>
+    <item name="darkgrey" type="color">#717475</item>
+    <color name="grey">#424242</color>
+    <color name="green">#088A29</color>
+
+
+</resources>
