@@ -5,7 +5,7 @@ This Android library used to Scan Wifi single or multiple times and get connect 
 
 Anyone can simple scan and connect the wifi using vibwifi library
 
-You can scan wifi using below 
+You can scan wifi using below code
 
 ```html
 vibwifi vib= new vibwifi();
