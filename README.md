@@ -5,6 +5,15 @@ This Android library used to Scan Wifi single or multiple times and get connect 
 
 Anyone can simple scan and connect the wifi using vibwifi library
 
+
+
+Add vibwifi library via dependency
+
+  
+```html
+compile 'com.techibi:vibwifi_lib:0.1.1'
+```
+
 Enable Location permission in manifest file
 
 ```html
