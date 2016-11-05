@@ -7,7 +7,7 @@ Anyone can simple scan and connect the wifi using vibwifi library
 
 
 
-Add vibwifi library via dependency
+Add vibwifi library via dependencies 
 
   
 ```html
