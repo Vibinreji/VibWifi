@@ -5,6 +5,13 @@ This Android library used to Scan Wifi single or multiple times and get connect 
 
 Anyone can simple scan and connect the wifi using vibwifi library
 
+Enable Location permission in manifest file
+
+```html
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+```
+
 You can scan wifi using below code
 
 ```html
@@ -57,5 +64,30 @@ You can also connect the wifi using below codes
 vib.connectwifi(getApplicationContext(),ssid,password);
 
 ```
+Marshmallow devices need runtime permissions
 
+```html
+if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+   requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
+                 PERMISSIONS_REQUEST_CODE_ACCESS_COARSE_LOCATION);
 
+}else{
+
+ vibwifi vib= new vibwifi();
+ vib.singlescan(MainActivity.this);
+   
+}
+
+@Override
+ public void onRequestPermissionsResult(int requestCode, String[] permissions,
+         int[] grantResults) {
+     if (requestCode == PERMISSIONS_REQUEST_CODE_ACCESS_COARSE_LOCATION
+             && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+         // Do something with granted permission
+         
+         vibwifi vib= new vibwifi();
+        vib.singlescan(MainActivity.this);
+       
+     }
+ }
+```
